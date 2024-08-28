@@ -1,0 +1,21 @@
+@media only screen and (max-width: 1420px) {
+  .wrapper {
+    min-width: 768px;
+  }
+  .wrapper .inner {
+    width: 100%;
+  }
+  .wrapper .inner .content {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .wrapper .inner .content .left_cnt {
+    margin-right: 30px;
+  }
+}

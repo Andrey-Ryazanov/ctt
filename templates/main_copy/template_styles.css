@@ -1,0 +1,28 @@
+.banners-block {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .banners-block > .banners-block-image {
+    display: block;
+    width: calc(50% - 10px);
+  }
+  
+  .banners-block > .banners-block-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  @media (max-width: 680px) {
+    .banners-block {
+        display: flex;
+        flex-direction: column;
+    }
+  
+    .banners-block > .banners-block-image {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+  }

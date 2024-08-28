@@ -1,0 +1,323 @@
+#wrapper .inn_wrap .main_content .inner_content .media-partners__logo.logo_big_height img {
+    width: auto;
+    height: 69px;
+}
+#wrapper .inn_wrap .media-partners__logo.logo_big_width {
+    width: 228px;
+    height: 69px;
+}
+
+#wrapper .inn_wrap .main_content .inner_content a.red_button{
+    background: #b70e0b;
+    display: inline-block;
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    height: 26px;
+    padding-left: 30px;
+    padding-right: 20px;
+    line-height: 26px;
+}
+#wrapper .inn_wrap .main_content .inner_content a.red_button:hover{
+    color: #fff;
+    text-decoration: none;
+}
+#wrapper .inn_wrap .main_content .inner_content a.red_button:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 30px;
+    background: url(/upload/medialibrary/2d6/button_podrobnee.png) 0 50% no-repeat;
+    background-size: cover;
+}
+}
+
+
+@media (max-width: 680px){
+	#wrapper .inn_wrap .media-partners__logo.logo_big_width {
+	    width: 146px;
+	    height: 54px;
+	}
+}
+
+.my_iframe{
+    width: 100%;
+    height: 346px;	
+}
+
+#wrapper .inn_wrap .main_content .inner_content .photo_gallery .block div .desc{
+  display: block;
+  font-size: 14px;
+  line-height: 28px;
+  width: 225px;
+}
+#wrapper .inn_wrap .main_content .inner_content .news_list.digest_news .item:before {
+  top: 8px;
+}
+#wrapper .inn_wrap .main_content .inner_content  .news_list.digest_news .dexc{
+  display: none;
+}
+#wrapper .inn_wrap .main_content .inner_content  .news_list.digest_news .item.active .dexc{
+  display: block;
+}
+#wrapper .inn_wrap .main_content .inner_content  .news_list.digest_news2 .img{
+  float: left;
+  width: 110px;
+  margin:0 20px 0 0;
+}
+#wrapper .inn_wrap .main_content .inner_content .news_list.digest_news .item {
+  padding-right: 20px;
+}
+#wrapper .inn_wrap .main_content .inner_content .news_list.digest_news .item a{
+  float:none;
+}
+#num_inp1{
+  margin-left: 32px;
+  width: 54px; 
+  height: 30px;
+  display: inline-block !important;
+}
+#num_inp2{
+  margin-left: 45px; 
+  width: 54px; 
+  height: 30px;
+  display: inline-block !important;
+}
+#num_inp3 {
+  margin-left: 159px; 
+  width: 54px; 
+  height: 30px; 
+  display: inline-block !important;
+}
+#form_lk_source {
+  margin-left: 32px;
+  height: 30px;
+  width: 160px;
+  display: inline-block !important;
+}
+#catalog_list {
+  overflow: hidden;
+}
+#catalog_list iframe {
+  border: 0;
+  margin-top: -75px;
+}
+
+#wrapper .inn_wrap .main_content .inner_content .bt_pp_zb a{
+  display: inline-block;
+  font-weight: 300;
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  margin-top: 4px;
+  background-color: #b70e0b;
+  min-height: 20px;
+  padding: 5px 10px 5px 30px;
+  position: relative;
+  top: auto;
+  left: auto;
+  right: auto;
+  bottom: auto;
+}
+#wrapper .inn_wrap .main_content .inner_content .bt_pp_zb a:hover {
+  color: #fff;
+}
+#wrapper .inn_wrap .main_content .inner_content .bt_pp_zb a:before {
+  display: block;
+  position: absolute;
+  top: 50%;
+  margin-top: -5px;
+  left: 10px;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: url(/img/arr_link_w.png);
+}
+@media (max-width: 680px) {
+  #num_inp1{
+    width: 70px;
+    margin-left: 21px;
+    height: 30px;
+  }
+  #num_inp2{
+    width: 70px;
+    margin-left: 21px;
+    height: 30px;
+  }
+  #num_inp3 {
+    width: 70px;
+    margin-left: 21px;
+    height: 30px;
+    position: absolute;
+    display: flex !important;
+  }
+  #pl_form {
+    margin-left: 0px;
+  }
+  #pl_form3 {
+    display: flow-root;
+    margin-left: 95px;
+    margin-top: 4px;
+  }
+
+  #form_lk_data {
+    width: 257px !important;
+  }
+
+  .block_form {
+    position: relative;
+    display: block !important;
+  }
+}
+
+#wrapper .inn_wrap .main_content .inner_content .bt_progremm{
+  background-color: #b70e0b;
+  color: #ffffff;
+  display: block;
+  text-decoration: none;
+  height: 40px;
+  line-height: 40px;
+  margin: 3px auto 0;
+  width: 150px;
+}
+#wrapper .inn_wrap .main_content .inner_content .bt_progremm p{
+  text-align: center;
+  color: #ffffff;
+  line-height: 40px;
+  padding: 0 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
+@media (max-width: 680px){
+  #wrapper .inn_wrap .main_content .carousel {
+    height: auto !important;
+  }
+	.my_iframe{
+	    width: 100%;
+	    height: 170px;	
+	}
+}
+
+.agree-news-form--name {
+  display: block;
+  font-size: 11px;
+  font-weight: 100;
+  color: #9a9a9a;
+}
+
+.agree-news-form--name a {
+  color: #b70e0b;
+}
+
+.agree-news-form {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+#sub_access {
+  margin-right: 10px;
+}
+
+.banner-turkish-machinery {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.banner-turkish-machinery img.desktop {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.banner-turkish-machinery img.mobile {
+  display: none;
+}
+
+@media screen and (max-width: 360px) {
+  .banner-turkish-machinery img.mobile {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .banner-turkish-machinery img.desktop {
+    display: none;
+  }
+}
+
+.social-buttons-flex {
+  display: flex;
+}
+
+.social-buttons-flex a {
+  margin-top: 0px!important;
+  width: auto!important;
+}
+
+.banners-block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.banners-block > .banners-block-image {
+  display: block;
+  width: calc(33% - 10px);
+}
+
+.banners-block > .banners-block-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+@media (max-width: 680px) {
+  .banners-block {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .banners-block > .banners-block-image {
+      width: 100%;
+      margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 680px){
+	.bx-breadcrumb .bx-breadcrumb-item{
+		    white-space: normal;
+	}
+	#wrapper .inn_wrap .main_content .inner_content table tbody tr td {
+	    padding: 15px !important;
+	}
+	#wrapper .inn_wrap .main_content .inner_content table tbody tr td:nth-child(1) b{
+	    display: block;
+	    width: 75px;
+	}
+  .b-width-90-information {
+    width: 90% !important;
+  }
+	#wrapper .inn_wrap .main_content .inner_content table tbody tr td:nth-child(2) div{
+	   width: 165px;
+	}
+	#wrapper .inn_wrap .main_content .inner_content table tbody tr td:nth-child(2) div a{
+	    max-width: 165px;
+	    display: block;
+	    overflow: hidden;
+	}
+
+	#wrapper .inn_wrap .main_content .inner_content table.table_business_program tbody tr td:nth-child(1) b {
+	    width: 100%;
+	}
+
+  .social-buttons-flex {
+    gap: 15px;
+  }
+}

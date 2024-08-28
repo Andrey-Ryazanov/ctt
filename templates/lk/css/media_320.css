@@ -1,0 +1,48 @@
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    min-width: 320px;
+  }
+  .wrapper:before {
+    top: 90px;
+  }
+  .wrapper .inner header .top_line .logo img {
+    width: 190px;
+  }
+  .wrapper .inner .content .left_cnt {
+    width: 100%;
+  }
+  .wrapper .inner .content .left_cnt .info form#info {
+    width: auto;
+  }
+  .wrapper .inner .content .left_cnt .info form#info .line {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .wrapper .inner .content .left_cnt .pwds #pwd_list .inp .line .copy_pwd {
+    width: 36px;
+    padding: 0;
+    background-color: #b52a26;
+    text-indent: -9999px;
+    position: relative;
+  }
+  .wrapper .inner .content .left_cnt .pwds #pwd_list .inp .line .copy_pwd:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-image: url(../img/copy_icon.svg);
+    width: 20px;
+    height: 20px;
+  }
+  .wrapper .inner .content .left_cnt .pwds form#add_pwd {
+    margin-bottom: 30px;
+  }
+  .wrapper .inner .content .left_cnt .pwds form#add_pwd .inp:nth-child(1) input {
+    width: 100%;
+  }
+}

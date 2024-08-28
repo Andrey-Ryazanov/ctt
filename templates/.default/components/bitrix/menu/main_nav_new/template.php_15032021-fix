@@ -1,0 +1,105 @@
+<?if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
+
+<?if (!empty($arResult)){?>
+    <div class="main_nav">
+        <a class="main_nav_320" href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+        <div class="block">
+            <?foreach($arResult["MENU"]['level1'] as $arItem){?>
+                <div class="item">
+                    <a class="main_link <?if ($arItem["PARAMS"]["no_wrap"] == "y") {?>proceed<?}?>" href="<?=$arItem['LINK']?>"><?=$arItem['TEXT']?><span></span></a>
+                    <?if ($arItem["PARAMS"]["no_wrap"] != "y") {?>
+                        <div class="wrap_sub_nav">
+                            <div class="sub_nav_1">
+                                <?
+                                $i = 0;
+                                $flag = false;
+                                if ($arItem["TEXT"] == "Выставка" || $arItem["TEXT"] == "Участникам" || $arItem["TEXT"] == "Trade fair" || $arItem["TEXT"] == "Exhibitors" || $arItem["TEXT"] == "Журналистам" || $arItem["TEXT"] == "Press") {
+                                    $flag = true;
+                                }
+                                ?>
+                                <?foreach($arResult["MENU"]['level2'][$arItem['TEXT']] as $k => $arItem2){?>
+                                    <?if ($i == 1) {?>
+                                        <div class="sub_nav_1 r">
+                                    <?}?>
+                                    <div class="sub_item_1">
+                                        <a class="sub_link_1 <?if ($i == 0) {?>nh<?}?>" <?if ($arItem2['LINK']) {?>href="<?=$arItem2['LINK']?>"<?}?>><?=$arItem2['TEXT']?><span></span></a>
+                                        <div class="sub_nav_2">
+                                            <?$admin_key = 0?>
+                                            <?foreach ($arItem2["PARAMS"] as $arName => $arLink) {?>
+                                                <?if ($arItem2["ADDITIONAL_LINKS"][$admin_key] == "admin") {
+                                                    if ($USER->IsAdmin()) {?>
+                                                        <div class="sub_item_2">
+                                                            <a class="sub_link_2" <?if ($arLink) {?>href="<?=$arLink?>"<?}?>><?=$arName?></a>
+                                                        </div>
+                                                    <?}
+                                                } else {?>
+                                                    <div class="sub_item_2">
+                                                        <a class="sub_link_2" <?if ($arLink) {?>href="<?=$arLink?>"<?}?>><?=$arName?></a>
+                                                    </div>
+                                                <?}?>
+                                                <?$admin_key++?>
+                                            <?}?>
+                                        </div>
+                                    </div>
+                                    <?if ($i == 0 || (($i+1) == count($arItem2))) {?></div><?}?>
+                                    <?$i++?>
+                                    <?if ($flag) {
+                                        $c = 0;
+                                        if ($arItem["TEXT"] == "Журналистам" || $arItem["TEXT"] == "Press") {
+                                            $flag_g = true;
+                                        }
+                                        $ind = array(1,4,2,5,3,6,7);
+                                        ?>
+                                        <div class="sub_nav_1 r">
+                                        <?while (($c+1) != count($arResult["MENU"]['level2'][$arItem['TEXT']])) {?>
+                                            <?if ($c == 3 && $flag_g) {
+                                                $ind[$c] = 3;?>
+                                                </div>
+                                            <?}?>
+                                            <?if ($ind[$c] == 1 || $ind[$c] == 2 || $ind[$c] == 3) {?>
+                                                <div class="sub_col">
+                                            <?}?>
+                                            <div class="sub_item_1">
+                                                <a class="sub_link_1" href="<?=$arResult["MENU"]['level2'][$arItem['TEXT']][$ind[$c]]["LINK"]?>"><?=$arResult["MENU"]['level2'][$arItem['TEXT']][$ind[$c]]["TEXT"]?><span></span></a>
+                                                <div class="sub_nav_2">
+                                                    <?$admin_key_2 = 0?>
+                                                    <?foreach ($arResult["MENU"]['level2'][$arItem['TEXT']][$ind[$c]]["PARAMS"] as $arName => $arLink) {?>
+                                                        <?if ($arResult["MENU"]['level2'][$arItem['TEXT']][$ind[$c]]["ADDITIONAL_LINKS"][$admin_key_2] == "admin") {
+                                                            if ($USER->IsAdmin()) { ?>
+                                                                <div class="sub_item_2">
+                                                                    <a class="sub_link_2" <?if ($arLink) {?>href="<?=$arLink?>"<?}?>><?=$arName?></a>
+                                                                </div>
+                                                            <?}
+                                                        } else {?>
+                                                            <div class="sub_item_2">
+                                                                <a class="sub_link_2" <?if ($arLink) {?>href="<?=$arLink?>"<?}?>><?=$arName?></a>
+                                                            </div>
+                                                        <?}?>
+                                                        <?$admin_key_2++?>
+                                                    <?}?>
+                                                </div>
+                                            </div>
+                                            <?
+                                            if ($ind[$c] == 4 || $ind[$c] == 5 || $ind[$c] == 6 || ($flag_g && ($ind[$c] == 3))) {?>
+                                                </div>
+                                                <?
+                                            }
+                                            $c++;
+                                        }?>
+                                        <?break;?>
+                                    <?}?>
+                                <?}?>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    <?}?>
+                </div>
+            <?}?>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+<?}?>

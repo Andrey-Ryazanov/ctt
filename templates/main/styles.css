@@ -1,0 +1,17 @@
+ #catalog_list{
+     height: 1370px;
+}
+ #catalog_list iframe{
+	border: 0;
+}
+
+#wrapper .inn_wrap .media-partners__logo.logo_big {
+    width: 128px;
+    height: 104px;
+}
+@media (max-width: 680px){
+	#wrapper .inn_wrap .media-partners__logo.logo_big {
+	    width: 60px;
+	    height: 60px;
+	}
+}

@@ -1,0 +1,77 @@
+div.news-list
+{
+	word-wrap: break-word;
+}
+div.news-list img.preview_picture
+{
+	float:left;
+	margin:0 4px 6px 0;
+}
+.news-date-time {
+	color:#486DAA;
+}
+
+#wrapper .inn_wrap .main_content .tabs_block .wrap_content .item .info_block .expo .desc {
+    padding: 0 12px !important;
+}
+
+#wrapper .inn_wrap .main_content .tabs_block .wrap_content .item .info_block.w100 .tabs_block{
+    margin: 0;
+    padding: 20px 0 0 0;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 940px;
+}
+#wrapper .inn_wrap .main_content .tabs_block .wrap_content .item .info_block.w100 .tabs_block .banners-block{
+    margin-bottom: 0;
+}
+#HIDE_wrapper .inn_wrap .main_content .tabs_block .wrap_content .item .info_block .expo.expo_ban:nth-child(3){
+    margin-bottom: 138px;
+}
+#wrapper .inn_wrap .main_content .tabs_block .wrap_content .item .info_block.w100 .tabs_block .banners-block-image{
+    width: 100%;
+}
+#wrapper .inn_wrap .main_content .tabs_block.show_1040{
+	display:block;
+}
+#wrapper .inn_wrap .main_content .tabs_block.show_1200{
+	display:none;
+}
+#wrapper .inn_wrap .main_content .tabs_block.show_680{
+	display:none;
+}
+@media (max-width: 1200px){
+	#wrapper .inn_wrap .main_content .tabs_block.show_1040{
+		display:none;
+	}
+	#wrapper .inn_wrap .main_content .tabs_block.show_1200{
+		display:block;
+	}
+	#HIDE_wrapper .inn_wrap .main_content .tabs_block .wrap_content .item .info_block .expo.expo_ban:nth-child(3){
+	    margin-bottom: 0;
+	}
+	#wrapper .inn_wrap .main_content .tabs_block .wrap_content .item .info_block .expo.expo_ban:nth-child(2){
+	    margin-bottom: 98px;
+	}
+	#wrapper .inn_wrap .main_content .tabs_block .wrap_content .item .info_block.w100 .tabs_block{
+	    width: 620px;
+	}	
+}
+@media (max-width: 680px){
+	#wrapper .inn_wrap .main_content .tabs_block.show_1200{
+		display:none;
+	}
+	#wrapper .inn_wrap .main_content .tabs_block.show_680{
+		display:block;
+	}
+	#wrapper .inn_wrap .main_content .tabs_block .wrap_content .item .info_block .expo.expo_ban:nth-child(2){
+	    margin-bottom: 0;
+	}
+	#wrapper .inn_wrap .main_content .tabs_block .wrap_content .item .info_block.w100 .tabs_block {
+	    width: 300px;
+	}
+	#wrapper .inn_wrap .main_content .tabs_block .wrap_content .item .info_block .expo.expo_ban:nth-child(7){
+	    //margin-bottom: 80px;
+	}
+}
